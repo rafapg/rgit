@@ -6,6 +6,7 @@
 	modified = "M";
 	added = "A";
 	deleted = "D";
+	unknown = "?";
 	null_status = " ";
 
 	if (not_staged_status != null_status)
