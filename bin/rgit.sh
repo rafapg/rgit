@@ -24,6 +24,9 @@ case $COMMAND in
 	MESSAGE="$2"
 	RAW_CMD="git commit -m  "\"$MESSAGE\"
 	;;
+ "l" | "log")
+	RAW_CMD="git log --graph --decorate"
+	;;
 esac
 
 
