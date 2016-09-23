@@ -6,15 +6,15 @@ AWK_VAR_CMD=""
 
 case $COMMAND in
  "df" | "diffirst")
-	FILE_LIB="/Users/Rafael/dev/tools/rgit/commands/command_to_first_line.awk"
+	FILE_LIB="/Users/Rafael/dev/tools/rgit/commands/cmd_first_staged_line.awk"
 	AWK_VAR_CMD="git diff -b"
 	;;
  "af" | "addfirst")
-	FILE_LIB="/Users/Rafael/dev/tools/rgit/commands/command_to_first_line.awk"
+	FILE_LIB="/Users/Rafael/dev/tools/rgit/commands/cmd_first_staged_line.awk"
 	AWK_VAR_CMD="git add"
 	;;
  "cf" | "checkoutfirst")
-	FILE_LIB="/Users/Rafael/dev/tools/rgit/commands/command_to_first_line.awk"
+	FILE_LIB="/Users/Rafael/dev/tools/rgit/commands/cmd_first_staged_line.awk"
 	AWK_VAR_CMD="git checkout"
 	;;
  "s" | "status")
