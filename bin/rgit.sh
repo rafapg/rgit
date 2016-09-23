@@ -21,8 +21,8 @@ case $COMMAND in
 	RAW_CMD="git status --porcelain"
 	;;
  "cm" | "commit")
-	MESSAGE=$2
-	RAW_CMD="git commit -m "$MESSAGE
+	MESSAGE="$2"
+	RAW_CMD="git commit -m  "\"$MESSAGE\"
 	;;
 esac
 
@@ -36,7 +36,7 @@ if [ "$RAW_CMD" != "NULL" ];
   then
   	echo $RAW_CMD
   	echo
-  	echo `$RAW_CMD`
+  	eval $RAW_CMD
 fi
 
 exit 0;
