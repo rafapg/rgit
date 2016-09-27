@@ -18,6 +18,9 @@ case $COMMAND in
 	AWK_VAR_CMD="git checkout"
 	;;
  "s" | "status")
+	RAW_CMD="git status"
+	;;
+ "s-p" | "status-porcelain")
 	RAW_CMD="git status --porcelain"
 	;;
  "cm" | "commit")
