@@ -30,6 +30,21 @@ case $COMMAND in
  "l" | "log")
 	RAW_CMD="git log --graph --decorate"
 	;;
+ "h" | "--help")
+	echo ""
+	echo "(R)afael (GI)rolineto (T)ool"
+	echo ""
+	echo "Commands avaliable:"
+	echo "  df  | diffirst         Runs a git diff with the first modified file of the status"
+	echo "  af  | addfirst         Adds file first file to the stagged files"
+	echo "  cf  | checkoutfirst    Returns the first file to the last commited status"
+	echo "  s   | status           Shows the current git local status"
+	echo "  s-p | status-porcelain Same than status, but with option --porcelain"
+	echo "  cm  | commit           Commits local changes - Requires the commit message"
+	echo "  l   | log              Shows the git log with graph and decorate commands"
+	echo "  h   | --help           Shows this message"
+	echo ""
+	;;
 esac
 
 
