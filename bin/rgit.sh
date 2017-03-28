@@ -15,7 +15,6 @@ case $COMMAND in
 	FILE_LIB="/Users/Rafael/dev/tools/rgit/commands/cmd_line_staged.awk"
 	LINE=$LINE_NUMBER
 	AWK_VAR_CMD="git diff -b"
-	echo "> $LINE"
 	;;
  "af" | "addfirst")
 	FILE_LIB="/Users/Rafael/dev/tools/rgit/commands/cmd_line_staged.awk"
