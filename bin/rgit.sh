@@ -5,34 +5,36 @@ FILE_LIB="NULL"
 RAW_CMD="NULL"
 AWK_VAR_CMD=""
 
+RGIT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
 case $COMMAND in
  "df" | "diffirst")
-	FILE_LIB="/Users/Rafael/dev/tools/rgit/commands/cmd_line_staged.awk"
+	FILE_LIB="${RGIT_DIR}/../commands/cmd_line_staged.awk"
 	LINE=1
 	AWK_VAR_CMD="git diff -b"
 	;;
  "d")
-	FILE_LIB="/Users/Rafael/dev/tools/rgit/commands/cmd_line_staged.awk"
+	FILE_LIB="${RGIT_DIR}/../commands/cmd_line_staged.awk"
 	LINE=$LINE_NUMBER
 	AWK_VAR_CMD="git diff -b"
 	;;
  "af" | "addfirst")
-	FILE_LIB="/Users/Rafael/dev/tools/rgit/commands/cmd_line_staged.awk"
+	FILE_LIB="${RGIT_DIR}/../commands/cmd_line_staged.awk"
 	LINE=1
 	AWK_VAR_CMD="git add"
 	;;
  "a")
-	FILE_LIB="/Users/Rafael/dev/tools/rgit/commands/cmd_line_staged.awk"
+	FILE_LIB="${RGIT_DIR}/../commands/cmd_line_staged.awk"
 	LINE=$LINE_NUMBER
 	AWK_VAR_CMD="git add"
 	;;
  "cf" | "checkoutfirst")
-	FILE_LIB="/Users/Rafael/dev/tools/rgit/commands/cmd_line_staged.awk"
+	FILE_LIB="${RGIT_DIR}/../commands/cmd_line_staged.awk"
 	LINE=1
 	AWK_VAR_CMD="git checkout"
 	;;
  "c")
-	FILE_LIB="/Users/Rafael/dev/tools/rgit/commands/cmd_line_staged.awk"
+	FILE_LIB="${RGIT_DIR}/../commands/cmd_line_staged.awk"
 	LINE=$LINE_NUMBER
 	AWK_VAR_CMD="git checkout"
 	;;
